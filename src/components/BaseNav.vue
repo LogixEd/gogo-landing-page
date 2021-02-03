@@ -38,7 +38,7 @@ export default {
   name: "base-nav",
   components: {
     FadeTransition,
-    NavbarToggleButton
+    NavbarToggleButton,
   },
   props: {
     type: {

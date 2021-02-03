@@ -8,6 +8,10 @@ import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
 
+import LandingPage from "./components/LandingPage.vue";
+import LandingHeader from "./layout/LandingHeader.vue";
+import LandingFooter from "./layout/LandingFooter.vue";
+
 Vue.use(Router);
 
 export default new Router({
@@ -56,6 +60,15 @@ export default new Router({
         header: AppHeader,
         default: Profile,
         footer: AppFooter
+      }
+    },
+    {
+      path: "/newlanding",
+      name: "newlanding",
+      components: {
+        header: LandingHeader,
+        default: LandingPage,
+        footer: LandingFooter
       }
     }
   ],
