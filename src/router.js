@@ -8,9 +8,10 @@ import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
 
-import LandingPage from "./components/LandingPage.vue";
+import LandingPage from "./views/LandingPage.vue";
 import LandingHeader from "./layout/LandingHeader.vue";
 import LandingFooter from "./layout/LandingFooter.vue";
+import FirstHeader from "./layout/FirstHeader.vue";
 
 Vue.use(Router);
 
@@ -18,7 +19,7 @@ export default new Router({
   linkExactActiveClass: "active",
   routes: [
     {
-      path: "/",
+      path: "/default",
       name: "landing",
       components: {
         header: AppHeader,
@@ -63,9 +64,10 @@ export default new Router({
       }
     },
     {
-      path: "/newlanding",
+      path: "/",
       name: "newlanding",
       components: {
+        //firstHeader: FirstHeader,
         header: LandingHeader,
         default: LandingPage,
         footer: LandingFooter
