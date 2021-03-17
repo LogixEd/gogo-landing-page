@@ -7,21 +7,24 @@ import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
+import Navbar from "./views/components/Navbar.vue";
+import Footer from "./views/components/Footer.vue";
+import Padge from "./views/components/Padge.vue";
 
 Vue.use(Router);
 
 export default new Router({
   linkExactActiveClass: "active",
   routes: [
-    {
-      path: "/",
-      name: "landing",
-      components: {
-        header: AppHeader,
-        default: Landing,
-        footer: AppFooter
-      }
-    },
+    // {
+    //   path: "/",
+    //   name: "landing",
+    //   components: {
+    //     header: AppHeader,
+    //     default: Landing,
+    //     footer: AppFooter
+    //   }
+    // },
     {
       path: "/component",
       name: "component",
@@ -56,6 +59,15 @@ export default new Router({
         header: AppHeader,
         default: Profile,
         footer: AppFooter
+      }
+    },
+    {
+      path: "/",
+      name: "padge",
+      components: {
+        header: Navbar,
+        default: Padge,
+        footer: Footer
       }
     }
   ],
