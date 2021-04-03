@@ -12,9 +12,7 @@
                   width="700"
                 />
               </div>
-              <h1>
-                TURN IMAGINATION INTO PRACTICE
-              </h1>
+              <h1>TURN IMAGINATION INTO PRACTICE</h1>
               <p class="lead">
                 The GoGo board is a low-cost open-source hardware device for
                 educational robotics, scientific experiments, and environmental
@@ -23,9 +21,7 @@
                 create game controllers, build interactive art installations,
                 and much more.
               </p>
-              <h1>
-                เริ่มใช้งานได้ทันที
-              </h1>
+              <h1>เริ่มใช้งานได้ทันที</h1>
               <img src="img/theme/sensor.png" class="img-fluid floating" />
               <h1>
                 ศึกษาการทำงานของระบบก่อนเริ่มเขียนโปรแกรม ผ่านโปรแกรมควบคุม

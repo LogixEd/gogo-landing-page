@@ -3,7 +3,7 @@ const webpack = require('webpack');
 module.exports = {
     publicPath:
         process.env.NODE_ENV === 'production'
-            ? '/gogo-landing-page/'
+            ? '/gogo-webpage/'
             : '/'
     ,
     configureWebpack: {
@@ -15,7 +15,7 @@ module.exports = {
         ]
     },
     pwa: {
-        name: 'Vue Argon Design',
+        name: 'GoGo Board - Turn imagination into practice',
         themeColor: '#172b4d',
         msTileColor: '#172b4d',
         appleMobileWebAppCapable: 'yes',

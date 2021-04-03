@@ -22,7 +22,7 @@ export default new Router({
       path: "/default",
       name: "landing",
       components: {
-        header: AppHeader,
+        header: LandingHeader,
         default: Landing,
         footer: AppFooter
       }

@@ -37,9 +37,11 @@
                 </div>
               </div>
             </div>
-            <ul class="navbar-nav flex-row mr-auto ml-4 d-none d-md-flex">
+            <ul class="navbar-nav flex-row mr-auto d-none d-md-flex">
               <li class="nav-item">
-                <a href="/" class="nav-link-light nav-text-color">GoGoBoard</a>
+                <a href="/" class="nav-link-light nav-text-color"
+                  >GoGo Board - Turn imagination into practice</a
+                >
               </li>
             </ul>
             <div class="d-none d-sm-block ml-auto">
@@ -106,12 +108,11 @@
               />
               <!---->
             </div>
-            
           </div>
         </div>
       </nav>
     </section>
-    <section>
+    <!-- <section>
       <nav
         class="navbar navbar-apple-2 main-nav flex-row align-items-md-center navbar-expand-lg navbar-light"
       >
@@ -150,7 +151,9 @@
             </div>
             <ul class="navbar-nav flex-row mr-auto ml-4 d-none d-md-flex">
               <li class="nav-item">
-                <a href="/" class="nav-link-light nav-text-color2">GoGoBoard6</a>
+                <a href="/" class="nav-link-light nav-text-color2"
+                  >GoGo Board version 6</a
+                >
               </li>
             </ul>
             <div class="d-none d-sm-block ml-auto">
@@ -174,7 +177,7 @@
                 <li class="nav-item">
                   <a href="/" class="nav-link-light nav-text-color2">docs</a>
                 </li>
-                
+
                 <li class="nav-item nav-text-color2">
                   <a
                     href="https://www.instagram.com/creativetimofficial"
@@ -189,17 +192,16 @@
               href="https://www.creative-tim.com/product/vue-argon-design-system"
               target="_blank"
               class="btn btu-color-buy btn-neutral btn-icon ml-sm-3 d-none d-md-block"
-              >
+            >
               <span class="nav-link-inner--text nav-text-color">Buy</span></a
             >
           </div>
         </div>
       </nav>
-    </section>
+    </section> -->
   </div>
 </template>
 <script>
-
 </script>
 
 <style>
@@ -210,7 +212,7 @@
   color: #000;
 }
 .btu-color-buy {
-  background-color: #0071E3 !important;
+  background-color: #0071e3 !important;
 }
 
 .navbar-apple {
