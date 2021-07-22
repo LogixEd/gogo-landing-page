@@ -1,9 +1,9 @@
 <template>
-    <nav class="navbar"
-         :class="[
-            {'navbar-expand-lg': expand},
+    <nav class="navbar fixed-top"
+        v-bind:class="[
+            {'navbar-expand-lg': true},
             {[`navbar-${effect}`]: effect},
-            {'navbar-transparent': transparent},
+            {'navbar-transparent-fixed': transparent},
             {[`bg-${type}`]: type},
             {'rounded': round}
          ]">
@@ -32,7 +32,7 @@
 </template>
 <script>
 import { FadeTransition } from "vue2-transitions";
-import NavbarToggleButton from "./NavbarToggleButton";
+import NavbarToggleButton from "../components/NavbarToggleButton.vue";
 
 export default {
   name: "base-nav",
@@ -59,7 +59,7 @@ export default {
     },
     effect: {
       type: String,
-      default: "light",
+      default: "dark",
       description: "Effect of the navbar (light|dark)"
     },
     round: {
@@ -72,11 +72,11 @@ export default {
       default: false,
       description: "Whether navbar is transparent"
     },
-    expand: {
-      type: Boolean,
-      default: false,
-      description: "Whether navbar should contain `navbar-expand-lg` class"
-    }
+    // expand: {
+    //   type: Boolean,
+    //   default: true,
+    //   description: "Whether navbar should contain `navbar-expand-lg` class"
+    // }
   },
   data() {
     return {

@@ -64,7 +64,7 @@
             </ul>
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank"
+                    <a class="nav-link nav-link-icon" href="https://www.facebook.com/GoGo-Board-Thailand-199024580829714" target="_blank"
                        data-toggle="tooltip" title="Like us on Facebook">
                         <i class="fa fa-facebook-square"></i>
                         <span class="nav-link-inner--text d-lg-none">Facebook</span>
@@ -91,7 +91,7 @@
                         <span class="nav-link-inner--text d-lg-none">Github</span>
                     </a>
                 </li>
-                <li class="nav-item d-none d-lg-block ml-lg-4">
+                <li class="nav-item d-none d-lg-block ml-lg-4"> 
                     <a href="https://www.creative-tim.com/product/vue-argon-design-system" target="_blank"
                        class="btn btn-neutral btn-icon">
                 <span class="btn-inner--icon">

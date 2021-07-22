@@ -21,3 +21,11 @@
 @function shapes-dark-color($key: "step-1-gradient-bg") {
 	@return map-get($shapes-dark-colors, $key);
 }
+
+@function shapes-gogo-color($key: 'step-1-gradient-bg') {
+	@return map-get($shapes-gogo-colors, $key)
+}
+
+@function shapes-gogo1-color($key: 'step-1-gradient-bg') {
+	@return map-get($shapes-gogo1-colors, $key)
+}
