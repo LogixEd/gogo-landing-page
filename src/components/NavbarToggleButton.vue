@@ -24,4 +24,5 @@ export default {
 };
 </script>
 <style>
+/* Setting the stroke to green using rgb values (0, 128, 0) */
 </style>

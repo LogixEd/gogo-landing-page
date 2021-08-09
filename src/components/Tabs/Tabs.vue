@@ -2,7 +2,7 @@
   <component :is="layoutComponent">
     <template slot="nav">
       <div class="nav-wrapper">
-        <ul class="nav"
+        <ul class=""
             role="tablist"
             :class="
             [type ? `nav-pills-${type}`: '',
@@ -15,7 +15,7 @@
             ]">
 
           <li v-for="tab in tabs"
-              class="nav-item"
+              class="nav-item p-2 bd-highlight"
               :key="tab.id || tab.title">
 
             <a data-toggle="tab"

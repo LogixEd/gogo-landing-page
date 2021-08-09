@@ -7,6 +7,7 @@ import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
+import About from './views/About.vue'
 import HomePage from './views/HomePage.vue'
 import WebHeader from './layout/WebHeader.vue'
 import WebFooter from './layout/WebFooter.vue'
@@ -31,6 +32,15 @@ export default new Router({
       components: {
         header: WebHeader,
         default: HomePage,
+        footer: WebFooter
+      }
+    },
+    {
+      path: "/about",
+      name: "about",
+      components: {
+        header: WebHeader,
+        default: About,
         footer: WebFooter
       }
     },
@@ -69,7 +79,7 @@ export default new Router({
         default: Profile,
         footer: AppFooter
       }
-    }
+    },
   ],
   scrollBehavior: to => {
     if (to.hash) {

@@ -182,7 +182,7 @@
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: rgba(255, 255, 255, .95);
+    background-color: rgba(255, 255, 255, 1);
     border: 0;
     box-shadow: none;
 
@@ -195,7 +195,7 @@
     }
 
     .navbar-toggler-icon {
-        background-image: $navbar-dark-toggler-icon-bg;
+        background-image: $navbar-gogo-toggler-icon-bg;
     }
 }
 
