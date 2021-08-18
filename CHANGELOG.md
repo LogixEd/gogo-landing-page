@@ -34,3 +34,4 @@
 - Fix background color
 - Remove FAQ
 - Fix font size
+- Rewrite Readme
