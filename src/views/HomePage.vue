@@ -1,230 +1,295 @@
 <template>
-    <div>
-        <div class="position-relative">
-            <!-- shape Hero -->
-            <div class="d-flex">
-                <section class="section section-shaped  section-shaped-gogo my-0">
-                    <div class="shape shape-style-1 shape-gogo shape-skew">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="animation-container">
-                        <div class="container-gogo">
-                            <div class="img-container slide-to-left">
-                                <transition name="fadeForGoGo">
-                                    <img src="../img/gogopic.png" class="img-fluid floating img-gogo-logo " v-on:load="onLoaded" v-show="loaded"/>
-                                </transition>
-                            </div>
-                            <div class="card-container ">
-                                <!-- class="border-0 h-100" hover shadow body-classes="py-5" -->
-                                <card gradient="secondary" shadow body-classes="py-5" class="appear-when-last">
-                                        <h2 class="display-1 text-black text-center">GoGo Board</h2>
-                                        <h2 class="display-2 text-muted text-center"><span>Turn imagination to practice.</span></h2>
-                                        <p class="lead text-muted">The GoGo Board is a low-cost open-source hardware device for educational robotics, 
-                                                    scientific experiments, 
-                                                    and environmental sensing. 
-                                                    Children can use the board to construct robots, 
-                                                    measure and log environmental data, 
-                                                    conduct scientific investigations, 
-                                                    create game controllers, 
-                                                    build interactive art installations, 
-                                                    and much more.</p>
-                                </card>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+  <div>
+    <div class="position-relative">
+      <!-- shape Hero -->
+      <div class="d-flex">
+        <section class="section section-shaped section-shaped-gogo my-0">
+          <div class="shape shape-style-1 shape-gogo1 shape-skew">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="animation-container">
+            <div class="container-gogo">
+              <div class="img-container slide-to-left">
+                <transition name="fadeForGoGo">
+                  <img
+                    src="../img/gogopic.png"
+                    class="img-fluid floating img-gogo-logo"
+                    v-on:load="onLoaded"
+                    v-show="loaded"
+                  />
+                </transition>
+              </div>
+              <div class="card-container">
+                <!-- class="border-0 h-100" hover shadow body-classes="py-5" -->
+                <card
+                  gradient="secondary"
+                  shadow
+                  body-classes="py-5"
+                  class="appear-when-last"
+                >
+                  <h2 class="display-1 text-black text-center">GoGo Board</h2>
+                  <h2 class="display-2 text-muted text-center">
+                    <span>Turn imagination to practice.</span>
+                  </h2>
+                  <p class="lead text-muted">
+                    The GoGo Board is a low-cost open-source hardware device for
+                    educational robotics, scientific experiments, and
+                    environmental sensing. Children can use the board to
+                    construct robots, measure and log environmental data,
+                    conduct scientific investigations, create game controllers,
+                    build interactive art installations, and much more.
+                  </p>
+                </card>
+              </div>
             </div>
-            <section class="section section-shaped  section-shaped-gogo my-0">
-                <div class="shape shape-style-1 shape-gogo1 shape-skew">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="container">
-                    <div class="row row-grid justify-content-center my-0">
-                      <div class="text-center">
-                          <h2 class="display-1 text-dark">GoGo Code
-                          </h2>
-                          <p class="lead text-secondary">This is the tool for operating the board.</p>
-                      </div>
-                        <div class="gogo-code-container">
-                            <!-- <div class="card shadow bg-gradient-secondary"> -->
-                                <div class="card-body p-lg-5 gogo-code-display">
-                                    <web class="gogo-code-display-height" :src="'https://code.gogoboard.org/#/'"/>
-                                </div>
-                            <!-- </div> -->
-                        </div>
-                      <!-- <div class="gogo-code-container">
-                          <div class="card gogo-code-display">
-                            <web :src="'https://code.gogoboard.org/#/'"/>
-                          </div>
-                      </div> -->
-                    </div>
-                </div>
-            </section>
-            <section class="section-shaped my-0">
-                <div class="shape shape-style-1 bg-gradient-warning shape-skew">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="container shape-container d-flex">
-                    <div class="col px-0">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h2 class="display-1  text-white">TRY THIS</h2>
-                                <h2 class="display-3 text-white">
-                                    <span>beep example</span>
-                                </h2>
-                                <p class="lead  text-white">This is an example for making GoGo Board to beep with 10 times.</p>
-                                <div class="btn-wrapper">
-                                    <base-button tag="a"
-                                                 href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
-                                                 class="mb-3 mb-sm-0"
-                                                 type="warning"
-                                                 icon="fa fa-shopping-bag">
-                                        Buy
-                                    </base-button>
-                                    <base-button tag="a"
-                                                 href="https://code.gogoboard.org/#/program/"
-                                                 class="mb-3 mb-sm-0 btn-yellow"
-                                                 type="default"
-                                                 icon="fa fa-code">
-                                        code.gogo Website
-                                    </base-button>
-                                </div>
-                            </div>
-                            <div class="card-body p-lg-12">
-                                <web :src="'https://code.gogoboard.org/#/view/17799706-2dbe-4614-b7a1-3dc94d0e545f?lang=en'"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <br><br>
-            <!-- 1st Hero Variation -->
+          </div>
+        </section>
+      </div>
+      <section class="section section-shaped section-shaped-gogo my-0">
+        <div class="shape shape-style-1 shape-gogo2 shape-skew">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <section class="section section-lg pt-lg-0 ">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <h2 class="display-1 mt--100">Supported Platform</h2>
-                    <div class="col-lg-13 ">
-                        <div class="row row-grid ">
-                            <div class="col-lg-4">
-                                <card class="border-0 h-100" hover shadow body-classes="py-5">
-                                    <div class="col-lg-12">
-                                        <div class="d-flex justify-content-center">
-                                            <div class="p-2 bd-highlight img-max-aspect">
-                                                <img src="../img/arduino-logo.png" class="img-fluid">
-                                            </div>
-                                        </div>
-                                        <div class="row top-buffer">
-                                            <h6 class="text-primary text-uppercase" >Arduino</h6>
-                                            <p class="description mt-3">Arduino is a world wide open-source electronics platform based on easy-to-use hardware and software.</p>
-                                            <div>
-                                                <badge type="primary" rounded>hardware</badge>
-                                                <badge type="primary" rounded>software</badge>
-                                                
-                                            </div>
-                                        </div>
-                                        <base-button tag="a" href="https://www.arduino.cc/" type="primary" class="mt-4">
-                                            Learn more
-                                        </base-button>
-                                    </div>
-                                </card>
-                            </div>
-                            <div class="col-lg-4">
-                                <card class="border-0 h-100" hover shadow body-classes="py-5">
-                                    <div class="col-lg-12">
-                                        <div class="d-flex justify-content-center">
-                                            <div class="p-2 bd-highlight img-max-aspect">
-                                                <img src="../img/seeed-logo.png" class="img-fluid">
-                                            </div>
-                                        </div>
-                                        <div class="row top-buffer">
-                                            <h6 class="text-success text-uppercase">Grove Sensor</h6>
-                                            <p class="description mt-3">Grove is an open modular system designed for easy connection of any input or output model to a microprocessor. </p>
-                                            <div>
-                                                <badge type="success" rounded>hardware</badge>
-                                                
-                                            </div>
-                                        </div>
-                                        <base-button tag="a" href="https://www.seeedstudio.com/category/Sensor-for-Grove-c-24.html" type="success" class="mt-4">
-                                            Learn more
-                                        </base-button>
-                                    </div>
-                                </card>
-                            </div>
-                            <div class="col-lg-4">
-                                <card class="border-0 h-100" hover shadow body-classes="py-5">
-                                    <div class="col-lg-12">
-                                        <div class="d-flex justify-content-center">
-                                            <div class="p-2 bd-highlight img-max-aspect">
-                                                <img src="../img/scratch-with-cat.jpeg" class="img-fluid">
-                                            </div>                            
-                                        </div>
-                                        <div class="row top-buffer">
-                                            <h6 class="text-warning text-uppercase">Scratch</h6>
-                                            <p class="description mt-3">Scratch is a free programming language and online community where you can freely create your imagination with coding.</p>
-                                            <div>
-                                                <badge type="warning" rounded>software</badge>
-
-                                            </div>
-                                        </div>
-                                        <base-button tag="a" href="https://scratch.mit.edu/" type="warning" class="mt-4">
-                                            Learn more
-                                        </base-button>
-                                    </div>
-                                </card>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="container">
+          <div class="row row-grid justify-content-center my-0">
+            <div class="text-center">
+              <h2 class="display-1 text-warning">GoGo Code</h2>
+              <p class="display-4 text-light">
+                This is the tool for operating the board.
+              </p>
             </div>
-        </section>
-        <br>
-        <section class="section section-lg">
-            <div class="container">
-                <div class="row row-grid justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="display-3">Interested in GoGo Board?
-                            <span class="text-success">Want to see more about GoGo Board? </span>
-                        </h2>
-                        <p class="lead">You can see the product information at this link down below. Thanks for your interest in our product
-                            we hope you enjoy our product.
-                        </p>
-                        <div class="btn-wrapper">
-                            <a href="https://www.creative-tim.com/product/vue-argon-design-system"
-                               class="btn btn-primary mb-3 mb-sm-0">Let's Start</a>
-                        </div>
-            
-                    </div>
-                </div>
+            <div class="gogo-code-container">
+              <!-- <div class="card shadow bg-gradient-secondary"> -->
+              <div class="card-body p-lg-5 gogo-code-display">
+                <web
+                  class="gogo-code-display-height shadow"
+                  :src="'https://code.gogoboard.org/#/'"
+                />
+              </div>
+              <!-- </div> -->
             </div>
-        </section>
-        <section class="section section-lg">
+            <div class="dummy-fixed-skew" v-if="less_width"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section-shaped section-shaped-gogo my-0">
+        <div class="shape shape-style-1 shape-gogo3 shape-skew">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="container shape-container d-flex">
+          <div class="col px-0">
+            <div class="row">
+              <div class="col-lg-6">
+                <h2 class="display-1 text-white">TRY THIS</h2>
+                <h2 class="display-3 text-white">
+                  <span>beep example</span>
+                </h2>
+                <p class="lead text-white">
+                  This is an example for making GoGo Board to beep with 10
+                  times.
+                </p>
+                <div class="btn-wrapper">
+                  <base-button
+                    tag="a"
+                    href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
+                    class="mb-3 mb-sm-0"
+                    type="warning"
+                    icon="fa fa-shopping-bag"
+                    target="_blank"
+                  >
+                    Buy
+                  </base-button>
+                  <base-button
+                    tag="a"
+                    href="https://code.gogoboard.org/#/program/"
+                    class="mb-3 mb-sm-0"
+                    type="danger"
+                    icon="fa fa-code"
+                    target="_blank"
+                  >
+                    code.gogo Website
+                  </base-button>
+                </div>
+              </div>
+              <div class="card-body p-lg-12">
+                <web
+                class="shadow"
+                  :src="'https://code.gogoboard.org/#/view/17799706-2dbe-4614-b7a1-3dc94d0e545f?lang=en'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br />
+      <!-- 1st Hero Variation -->
+    </div>
+    <section class="section section-lg pt-lg-0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2 class="display-1">Supported Platform</h2>
+          <div class="col-lg-13 top-text-padding">
+            <div class="row row-grid">
+              <div class="col-lg-4">
+                <card class="border-0 h-100" hover shadow body-classes="py-5">
+                  <div class="col-lg-12">
+                    <div class="d-flex justify-content-center">
+                      <div class="p-2 bd-highlight img-max-aspect">
+                        <img src="../img/arduino-logo.png" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="row top-buffer">
+                      <h6 class="text-primary text-uppercase">Arduino</h6>
+                      <p class="description mt-3">
+                        Arduino is a world wide open-source electronics platform
+                        based on easy-to-use hardware and software.
+                      </p>
+                      <div>
+                        <badge type="primary" rounded>hardware</badge>
+                        <badge type="primary" rounded>software</badge>
+                      </div>
+                    </div>
+                    <base-button
+                      tag="a"
+                      href="https://www.arduino.cc/"
+                      type="primary"
+                      class="mt-4"
+                      target="_blank"
+                    >
+                      Learn more
+                    </base-button>
+                  </div>
+                </card>
+              </div>
+              <div class="col-lg-4">
+                <card class="border-0 h-100" hover shadow body-classes="py-5">
+                  <div class="col-lg-12">
+                    <div class="d-flex justify-content-center">
+                      <div class="p-2 bd-highlight img-max-aspect">
+                        <img src="../img/seeed-logo.png" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="row top-buffer">
+                      <h6 class="text-success text-uppercase">Grove Sensor</h6>
+                      <p class="description mt-3">
+                        Grove is an open modular system designed for easy
+                        connection of any input or output model to a
+                        microprocessor.
+                      </p>
+                      <div>
+                        <badge type="success" rounded>hardware</badge>
+                      </div>
+                    </div>
+                    <base-button
+                      tag="a"
+                      href="https://www.seeedstudio.com/category/Sensor-for-Grove-c-24.html"
+                      type="success"
+                      class="mt-4"
+                      target="_blank"
+                    >
+                      Learn more
+                    </base-button>
+                  </div>
+                </card>
+              </div>
+              <div class="col-lg-4">
+                <card class="border-0 h-100" hover shadow body-classes="py-5">
+                  <div class="col-lg-12">
+                    <div class="d-flex justify-content-center">
+                      <div class="p-2 bd-highlight img-max-aspect">
+                        <img
+                          src="../img/scratch-with-cat.jpeg"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                    <div class="row top-buffer">
+                      <h6 class="text-warning text-uppercase">Scratch</h6>
+                      <p class="description mt-3">
+                        Scratch is a free programming language and online
+                        community where you can freely create your imagination
+                        with coding.
+                      </p>
+                      <div>
+                        <badge type="warning" rounded>software</badge>
+                      </div>
+                    </div>
+                    <base-button
+                      tag="a"
+                      href="https://scratch.mit.edu/"
+                      type="warning"
+                      class="mt-4"
+                      target="_blank"
+                    >
+                      Learn more
+                    </base-button>
+                  </div>
+                </card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <section class="section section-lg">
+      <div class="container">
+        <div class="row row-grid justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="display-3">
+              Interested in GoGo Board?
+              <span class="text-success"
+                >Want to see more about GoGo Board?
+              </span>
+            </h2>
+            <p class="lead">
+              You can see the product information at this link down below.
+              Thanks for your interest in our product we hope you enjoy our
+              product.
+            </p>
+            <div class="btn-wrapper">
+              <a
+                href="https://www.creative-tim.com/product/vue-argon-design-system"
+                target="_blank"
+                class="btn btn-primary mb-3 mb-sm-0"
+                >Buy Me</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-lg">
+      <div class="container">
+        <Carousal />
+      </div>
+    </section>
+    <!-- <section class="section section-lg">
             <div class="container">
-                <h4 class="display-4 mb-5 mt-5 text-center">FAQ</h4>
+                <h2 class="display-4 mb-5 mt-5 text-center">FAQ</h2>
                 <div>
                   <b-card no-body>
                     <b-tabs card vertical>
@@ -235,19 +300,37 @@
                   </b-card>
                 </div>
             </div>
-        </section>
-    </div>
+        </section> -->
+  </div>
 </template>
 <script>
 import web from "../modifiedComponents/ImportWeb.vue";
 import { ModelCollada } from "vue-3d-model";
 import Tabs from "@/components/Tabs/Tabs.vue";
 import TabPane from "@/components/Tabs/TabPane.vue";
+import Carousal from "./components/BST-Carousal.vue";
+
 export default {
+  created(){
+    window.addEventListener("resize", this.myEventHandler);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.myEventHandler);
+  },
+  methods: {
+    myEventHandler(e) {
+      if(e < 1320){
+        this.less_width = false
+        }else{
+        this.less_width = true
+      }
+    }
+  },
   data() {
     return {
       loaded: false,
       slideIsDone: false,
+      less_width: true
     };
   },
   mounted() {},
@@ -264,6 +347,7 @@ export default {
     ModelCollada,
     Tabs,
     TabPane,
+    Carousal,
   },
 };
 </script>
@@ -271,13 +355,17 @@ export default {
 // @import "../assets/scss/bootstrap/_variables.scss";
 // @import "../assets/scss/custom/_section.scss";
 
-.gogo-code-container{
+.gogo-code-container {
   height: 100%;
   width: 100%;
 }
 
-.gogo-code-display{
+.gogo-code-display {
   height: 100%;
+}
+
+.gogo-code-display-height {
+  width: 100%;
 }
 
 .container-gogo {
@@ -310,8 +398,15 @@ export default {
   height: 50vh;
   /* right: 0%; */
   transform: translate(-50%, -50%);
-  margin-top: -70vh;
+  margin-top: -40%;
   margin-left: 20%;
+  // justify-content: center;
+  // position: relative;
+  // top: 40vh;
+  // //   left: 50vw;
+  // height: 50vh;
+  // width: 100%;
+  // transform: translate(50vw, -110vh);
 }
 .btn-yellow {
   color: #fff;
@@ -348,18 +443,23 @@ export default {
     right: 22.5%;
   }
 }
+
+h2 {
+  font-size: 5vw;
+}
+
 @media only screen and (max-width: 1320px) {
 
-  .gogo-code-display-height{
+  .gogo-code-display-height {
     height: 100%;
   }
 
-  .gogo-code-container{
+  .gogo-code-container {
     height: 100vh;
     width: 100%;
   }
 
-  .gogo-code-display{
+  .gogo-code-display {
     height: 75vh;
   }
 
@@ -369,8 +469,8 @@ export default {
     height: 100vh;
   }
 
-  .animation-container{
-    overflow: auto; 
+  .animation-container {
+    overflow: auto;
   }
 
   .appear-when-last {
@@ -395,10 +495,16 @@ export default {
     font-size: 3vw;
   }
   .card-container h2 {
-    font-size: 3vw;
+    font-size: 5vw;
   }
-  h2{
+  h2 {
     font-size: 10vw;
+  }
+  h3 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 150%;
   }
   @keyframes go-left {
     0% {
@@ -452,7 +558,17 @@ export default {
   margin-top: 30%;
 }
 
+.top-text-padding {
+  margin-top: 20px;
+}
+
 .img-max-aspect {
   max-height: 150px;
+}
+
+.dummy-fixed-skew{
+  height: 200px;
+  width: 100%;
+  clear: both;
 }
 </style>

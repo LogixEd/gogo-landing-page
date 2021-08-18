@@ -178,7 +178,7 @@
     }
 
     .shape-gogo {
-        background: linear-gradient(150deg, shapes-gogo-color("step-1-gradient-bg") 15%, shapes-gogo-color("step-2-gradient-bg") 70%, shapes-gogo-color("step-3-gradient-bg") 94%);
+        background: linear-gradient(180deg, shapes-gogo-color("step-1-gradient-bg") 15%, shapes-gogo-color("step-2-gradient-bg") 70%, shapes-gogo-color("step-3-gradient-bg") 94%);
 
          :nth-child(1) {
             background: shapes-gogo-color("span-1-bg");
@@ -202,31 +202,99 @@
     }
 
     .shape-gogo1 {
-        // background: linear-gradient(150deg, shapes-gogo1-color("step-1-gradient-bg") 15%, shapes-gogo1-color("step-2-gradient-bg") 70%, shapes-gogo1-color("step-3-gradient-bg") 94%);
+        background: linear-gradient(180deg, shapes-gogo1-color("step-1-gradient-bg") 15%, shapes-gogo1-color("step-2-gradient-bg") 70%, shapes-gogo1-color("step-3-gradient-bg") 94%);
 
-        //  :nth-child(1) {
-        //     background: shapes-gogo1-color("span-1-bg");
-        // }
+         :nth-child(1) {
+            background: shapes-gogo1-color("span-1-bg");
+        }
 
-        //  :nth-child(2) {
-        //     background: shapes-gogo1-color("span-2-bg");
-        // }
+         :nth-child(2) {
+            background: shapes-gogo1-color("span-2-bg");
+        }
 
-        //  :nth-child(3) {
-        //     background: shapes-gogo1-color("span-3-bg");
-        // }
+         :nth-child(3) {
+            background: shapes-gogo1-color("span-3-bg");
+        }
 
-        //  :nth-child(4) {
-        //     background: shapes-gogo1-color("span-4-bg");
-        // }
+         :nth-child(4) {
+            background: shapes-gogo1-color("span-4-bg");
+        }
 
-        //  :nth-child(5) {
-        //     background: shapes-gogo1-color("span-5-bg");
-        // }
-        // background-color: #662F6A;
-        background: linear-gradient(180deg,rgb(163, 37, 125) 0%, rgb(218, 79, 106) 35%, rgb(222, 80, 59) 100%);
+         :nth-child(5) {
+            background: shapes-gogo1-color("span-5-bg");
+        }
     }
 
+
+    .shape-gogo2 {
+        background: linear-gradient(180deg, shapes-gogo2-color("step-1-gradient-bg") 15%, shapes-gogo2-color("step-2-gradient-bg") 70%, shapes-gogo2-color("step-3-gradient-bg") 94%);
+
+         :nth-child(1) {
+            background: shapes-gogo2-color("span-1-bg");
+        }
+
+         :nth-child(2) {
+            background: shapes-gogo2-color("span-2-bg");
+        }
+
+         :nth-child(3) {
+            background: shapes-gogo2-color("span-3-bg");
+        }
+
+         :nth-child(4) {
+            background: shapes-gogo2-color("span-4-bg");
+        }
+
+         :nth-child(5) {
+            background: shapes-gogo2-color("span-5-bg");
+        }
+    }
+    .shape-gogo3 {
+        background: linear-gradient(180deg, shapes-gogo3-color("step-1-gradient-bg") 15%, shapes-gogo3-color("step-2-gradient-bg") 70%, shapes-gogo3-color("step-3-gradient-bg") 94%);
+
+         :nth-child(1) {
+            background: shapes-gogo3-color("span-1-bg");
+        }
+
+         :nth-child(2) {
+            background: shapes-gogo3-color("span-2-bg");
+        }
+
+         :nth-child(3) {
+            background: shapes-gogo3-color("span-3-bg");
+        }
+
+         :nth-child(4) {
+            background: shapes-gogo3-color("span-4-bg");
+        }
+
+         :nth-child(5) {
+            background: shapes-gogo3-color("span-5-bg");
+        }
+    }
+    .shape-gogo4 {
+        background: linear-gradient(180deg, shapes-gogo4-color("step-1-gradient-bg") 15%, shapes-gogo4-color("step-2-gradient-bg") 70%, shapes-gogo4-color("step-3-gradient-bg") 94%);
+
+         :nth-child(1) {
+            background: shapes-gogo4-color("span-1-bg");
+        }
+
+         :nth-child(2) {
+            background: shapes-gogo4-color("span-2-bg");
+        }
+
+         :nth-child(3) {
+            background: shapes-gogo4-color("span-3-bg");
+        }
+
+         :nth-child(4) {
+            background: shapes-gogo4-color("span-4-bg");
+        }
+
+         :nth-child(5) {
+            background: shapes-gogo4-color("span-5-bg");
+        }
+    }
     .shape-style-1 {
         span {
             height: 120px;

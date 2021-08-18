@@ -28,3 +28,9 @@
 - Add FAQ at the bottom of the body by using bootstrap's tabs
     - remains content
 - Fix navbar when it's become mobile (Hamburger at top right)
+
+## [0.1.2] 18-08-2021
+- Adding carousal component for project preview section
+- Fix background color
+- Remove FAQ
+- Fix font size

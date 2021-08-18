@@ -182,7 +182,7 @@ $shapes-gogo-colors: map-merge((
 
   "step-1-gradient-bg":         #A3257D,
   "step-2-gradient-bg":         #DA4F6A,
-  "step-3-gradient-bg":         #DE503B,
+  "step-3-gradient-bg":         #fb6640,
   "span-1-bg":                  #DE503B,
   "span-2-bg":                  #DA4F6A,
   "span-3-bg":                  #DE503B,
@@ -196,15 +196,64 @@ $shapes-gogo1-colors: map-merge((
   // "step-2-gradient-bg":         #A3257D,
   // "step-3-gradient-bg":         #DA4F6A,
 
-  "step-1-gradient-bg":         #A3257D,
-  "step-2-gradient-bg":         #DA4F6A,
-  "step-3-gradient-bg":         #DE503B,
+  "step-1-gradient-bg":         #662f6a,
+  "step-2-gradient-bg":         #A3257D,
+  "step-3-gradient-bg":         #d30e5a,
   "span-1-bg":                  #DE503B,
   "span-2-bg":                  #28556a,
   "span-3-bg":                  #5e286a,
   "span-4-bg":                  #28556a,
   "span-5-bg":                  #008169
 ) , $shapes-gogo1-colors);
+
+$shapes-gogo2-colors: () !default;
+$shapes-gogo2-colors: map-merge((
+  // "step-1-gradient-bg":         #DE503B,
+  // "step-2-gradient-bg":         #A3257D,
+  // "step-3-gradient-bg":         #DA4F6A,
+
+  "step-1-gradient-bg":         #DA4F6A,
+  "step-2-gradient-bg":         #DA4F6A,
+  "step-3-gradient-bg":         #DA5E8D,
+  "span-1-bg":                  #DE503B,
+  "span-2-bg":                  #DA4F6A,
+  "span-3-bg":                  #DE503B,
+  "span-4-bg":                  #d782d9,
+  "span-5-bg":                  #008169
+) , $shapes-gogo2-colors);
+
+$shapes-gogo3-colors: () !default;
+$shapes-gogo3-colors: map-merge((
+  // "step-1-gradient-bg":         #DE503B,
+  // "step-2-gradient-bg":         #A3257D,
+  // "step-3-gradient-bg":         #DA4F6A,
+
+  "step-1-gradient-bg":         #FB6641,
+  "step-2-gradient-bg":         #FB9041,
+  "step-3-gradient-bg":         #FBAE3F,
+  "span-1-bg":                  #DE503B,
+  "span-2-bg":                  #DA4F6A,
+  "span-3-bg":                  #DE503B,
+  "span-4-bg":                  #d782d9,
+  "span-5-bg":                  #008169
+) , $shapes-gogo3-colors);
+
+$shapes-gogo4-colors: () !default;
+$shapes-gogo4-colors: map-merge((
+  // "step-1-gradient-bg":         #DE503B,
+  // "step-2-gradient-bg":         #A3257D,
+  // "step-3-gradient-bg":         #DA4F6A,
+
+  "step-1-gradient-bg":         #FBAE3F,
+  "step-2-gradient-bg":         #FB9041,
+  "step-3-gradient-bg":         #FB6641,
+  "span-1-bg":                  #DE503B,
+  "span-2-bg":                  #DA4F6A,
+  "span-3-bg":                  #DE503B,
+  "span-4-bg":                  #d782d9,
+  "span-5-bg":                  #008169
+) , $shapes-gogo4-colors);
+
 
 
 
