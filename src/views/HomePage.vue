@@ -37,15 +37,13 @@
                 >
                   <h2 class="display-1 text-black text-center">GoGo Board</h2>
                   <h2 class="display-2 text-muted text-center">
-                    <span>Turn imagination to practice.</span>
+                    <span>เปลี่ยนความคิดให้เป็นการลงมือทำ.</span>
                   </h2>
                   <p class="lead text-muted">
-                    The GoGo Board is a low-cost open-source hardware device for
-                    educational robotics, scientific experiments, and
-                    environmental sensing. Children can use the board to
-                    construct robots, measure and log environmental data,
-                    conduct scientific investigations, create game controllers,
-                    build interactive art installations, and much more.
+                    GoGo Board เป็นอุปกรณ์ราคาประหยัดเพื่อการศึกษา เข่น การสร้างหุ่นยนต์ การทำโครงงานวิทยาศาสตร์
+                    และ Iots เด็กสามารถใช้ GoGo Board ในการสร้างหุ่นยนต์ หรือแม้กระทั่งการวัดค่าสภาพแวดล้ามต่างๆ
+                    ผ่านเซ็นเซอร์ รวมไปถึงการสร้างอุปกรณ์ควบคุมเพื่อใช้ในการเล่นเกม และยังมีอีกหลายอย่างที่สามารถ
+                    สร้างได้ด้วย GoGo Board
                   </p>
                 </card>
               </div>
@@ -70,7 +68,7 @@
             <div class="text-center">
               <h2 class="display-1 text-warning">GoGo Code</h2>
               <p class="display-4 text-light">
-                This is the tool for operating the board.
+                และนี่คือเครื่องมือที่ใช้เพื่อควบคุม GoGo Board
               </p>
             </div>
             <div class="gogo-code-container">
@@ -103,13 +101,9 @@
           <div class="col px-0">
             <div class="row">
               <div class="col-lg-6">
-                <h2 class="display-1 text-white">TRY THIS</h2>
-                <h2 class="display-3 text-white">
-                  <span>beep example</span>
-                </h2>
+                <h2 class="display-1 text-white">ลองดูสิ</h2>
                 <p class="lead text-white">
-                  This is an example for making GoGo Board to beep with 10
-                  times.
+                  และนี่คือตัวอย่างในการทำให้ GoGo Board เล่นเสียง
                 </p>
                 <div class="btn-wrapper">
                   <base-button
@@ -150,7 +144,7 @@
     <section class="section section-lg pt-lg-0">
       <div class="container">
         <div class="row justify-content-center">
-          <h2 class="display-1">Supported Platform</h2>
+          <h2 class="display-1">แพลทฟอร์มที่รองรับ</h2>
           <div class="col-lg-13 top-text-padding">
             <div class="row row-grid">
               <div class="col-lg-4">
@@ -164,8 +158,8 @@
                     <div class="row top-buffer">
                       <h6 class="text-primary text-uppercase">Arduino</h6>
                       <p class="description mt-3">
-                        Arduino is a world wide open-source electronics platform
-                        based on easy-to-use hardware and software.
+                        Arduino คือ open-sourcse ที่เป็นที่ผลิตตัว microcontroller และเป็นที่ยอมรับสำหรับทั่วโลกในการทำ
+                         hardware และ software และเป
                       </p>
                       <div>
                         <badge type="primary" rounded>hardware</badge>
@@ -195,9 +189,8 @@
                     <div class="row top-buffer">
                       <h6 class="text-success text-uppercase">Grove Sensor</h6>
                       <p class="description mt-3">
-                        Grove is an open modular system designed for easy
-                        connection of any input or output model to a
-                        microprocessor.
+                        Grove คือ sensor ที่อำนวยความสะดวกสำหรับการเชื่อมต่อกับตัว
+                        microprocessor ไม่ว่าเป็น input หรือ output เพื่อให้เกิดความสะดวกในการเชื่อมต่อของอุปกรณ์
                       </p>
                       <div>
                         <badge type="success" rounded>hardware</badge>
@@ -229,9 +222,8 @@
                     <div class="row top-buffer">
                       <h6 class="text-warning text-uppercase">Scratch</h6>
                       <p class="description mt-3">
-                        Scratch is a free programming language and online
-                        community where you can freely create your imagination
-                        with coding.
+                        Scratch เป็น platform ที่ฟรี และออนไลน์สำหรับการพัฒนาการคิดริเริ่มสร้างสรรค์
+                        สำหรับการเขียน code รวมไปถึงการเขียนโค้ดสำหรับ hardware
                       </p>
                       <div>
                         <badge type="warning" rounded>software</badge>
@@ -260,15 +252,14 @@
         <div class="row row-grid justify-content-center">
           <div class="col-lg-8 text-center">
             <h2 class="display-3">
-              Interested in GoGo Board?
+              สนใจในตัว
+              <span class="text-primary">GoGo Board?</span>
               <span class="text-success"
-                >Want to see more about GoGo Board?
+                >อยากเห็นว่า GoGo Board ทำอะไรได้อีก?
               </span>
             </h2>
             <p class="lead">
-              You can see the product information at this link down below.
-              Thanks for your interest in our product we hope you enjoy our
-              product.
+              คุณสามารถเข้าไปดูรายละเอียดของ GoGo Board ได้ในลิ้งข้างล่างนี้
             </p>
             <div class="btn-wrapper">
               <a
@@ -445,7 +436,7 @@ export default {
 }
 
 h2 {
-  font-size: 5vw;
+  font-size: 4.5vw;
 }
 
 @media only screen and (max-width: 1320px) {

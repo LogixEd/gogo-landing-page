@@ -35,3 +35,6 @@
 - Remove FAQ
 - Fix font size
 - Rewrite Readme
+
+## [0.1.2] 25-08-2021
+- Adding thai language
