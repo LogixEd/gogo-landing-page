@@ -17,16 +17,15 @@
             </div>
 
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-                <a slot="title" href="#/homepage" class="nav-link" role="button">
+                <router-link lot="title" class="nav-link" role="button" :to="{ name: 'homepage' }">
                     <span class="nav-link-inner--text">{{$t('navHome')}}</span>
-                </a>
-                <a slot="title" href="#/about" class="nav-link" role="button">
+                </router-link>
+                <router-link lot="title" class="nav-link" role="button" :to="{ name: 'about' }">
                     <span class="nav-link-inner--text">{{$t('navAbout')}}</span>
-                </a>
-                <a slot="title" href="#/homepage" class="nav-link" role="button">
+                </router-link>
+                <router-link lot="title" class="nav-link" role="button" :to="{ name: 'homepage' }">
                     <span class="nav-link-inner--text">{{$t('navDoc')}}</span>
-                </a>
-                
+                </router-link>
             </ul>
 
            <ul class="navbar-nav align-items-lg-center ml-lg-auto">

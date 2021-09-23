@@ -41,3 +41,6 @@
 
 ## [0.1.2] 23-09-2021
 - Adding i18n plugin
+- Removing unused dependencies
+- Fixing favicon not changing
+- Fixing Navbar redirected by name not router path

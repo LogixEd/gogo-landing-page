@@ -19,22 +19,15 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import Argon from "./plugins/argon-kit";
-
 import i18n from "./plugins/i18n";
-
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-
-// Import Bootstrap an BootstrapVue CSS files (order is important)
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-// Make BootstrapVue available throughout your project
-Vue.use(BootstrapVue)
-
 import './registerServiceWorker'
 
-Vue.config.productionTip = false;
+Vue.use(BootstrapVue)
 Vue.use(Argon);
+
+Vue.config.productionTip = false;
+
 new Vue({
   router,
   i18n,
