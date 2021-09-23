@@ -337,8 +337,6 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-// @import "../assets/scss/bootstrap/_variables.scss";
-// @import "../assets/scss/custom/_section.scss";
 
 .gogo-code-container {
   height: 100%;
@@ -354,20 +352,17 @@ export default {
 }
 
 .container-gogo {
-  // @extend .container;
   margin-top: 5vh;
   width: 100%;
   height: 100vh;
   display: block;
   position: relative;
-  //   overflow: hidden;
   word-wrap: break-word;
 }
 .image-container {
   justify-content: center;
   position: relative;
   top: 40vh;
-  //   left: 50vw;
 
   transform: translate(-50vw, -50vh);
 }
@@ -381,17 +376,9 @@ export default {
   left: 53%;
   width: 70vh;
   height: 50vh;
-  /* right: 0%; */
   transform: translate(-50%, -50%);
   margin-top: -40%;
   margin-left: 20%;
-  // justify-content: center;
-  // position: relative;
-  // top: 40vh;
-  // //   left: 50vw;
-  // height: 50vh;
-  // width: 100%;
-  // transform: translate(50vw, -110vh);
 }
 .btn-yellow {
   color: #fff;
@@ -468,7 +455,6 @@ h2 {
   }
 
   .card-container {
-    /* top: 60vh; */
     margin-top: 5vw;
     left: 30vw;
     width: 80vw;
