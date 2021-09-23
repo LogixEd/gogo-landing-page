@@ -19,15 +19,6 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "landing",
-      components: {
-        header: AppHeader,
-        default: Landing,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/homepage",
       name: "homepage",
       components: {
         header: WebHeader,
@@ -44,42 +35,42 @@ export default new Router({
         footer: WebFooter
       }
     },
-    {
-      path: "/component",
-      name: "component",
-      components: {
-        header: AppHeader,
-        default: Components,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/login",
-      name: "login",
-      components: {
-        header: AppHeader,
-        default: Login,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/register",
-      name: "register",
-      components: {
-        header: AppHeader,
-        default: Register,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/profile",
-      name: "profile",
-      components: {
-        header: AppHeader,
-        default: Profile,
-        footer: AppFooter
-      }
-    },
+    // {
+    //   path: "/component",
+    //   name: "component",
+    //   components: {
+    //     header: AppHeader,
+    //     default: Components,
+    //     footer: AppFooter
+    //   }
+    // },
+    // {
+    //   path: "/login",
+    //   name: "login",
+    //   components: {
+    //     header: AppHeader,
+    //     default: Login,
+    //     footer: AppFooter
+    //   }
+    // },
+    // {
+    //   path: "/register",
+    //   name: "register",
+    //   components: {
+    //     header: AppHeader,
+    //     default: Register,
+    //     footer: AppFooter
+    //   }
+    // },
+    // {
+    //   path: "/profile",
+    //   name: "profile",
+    //   components: {
+    //     header: AppHeader,
+    //     default: Profile,
+    //     footer: AppFooter
+    //   }
+    // },
   ],
   scrollBehavior: to => {
     if (to.hash) {
