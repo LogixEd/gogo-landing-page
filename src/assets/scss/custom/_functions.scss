@@ -1,0 +1,40 @@
+// Retrieve color Sass maps
+
+@function section-color($key: "primary") {
+	@return map-get($section-colors, $key);
+}
+
+// Lines colors
+
+@function shapes-primary-color($key: "step-1-gradient-bg") {
+	@return map-get($shapes-primary-colors, $key);
+}
+
+@function shapes-default-color($key: "step-1-gradient-bg") {
+	@return map-get($shapes-default-colors, $key);
+}
+
+@function lines-light-color($key: "step-1-gradient-bg") {
+	@return map-get($shapes-light-colors, $key);
+}
+
+@function shapes-dark-color($key: "step-1-gradient-bg") {
+	@return map-get($shapes-dark-colors, $key);
+}
+
+@function shapes-gogo-color($key: 'step-1-gradient-bg') {
+	@return map-get($shapes-gogo-colors, $key)
+}
+
+@function shapes-gogo1-color($key: 'step-1-gradient-bg') {
+	@return map-get($shapes-gogo1-colors, $key)
+}
+@function shapes-gogo2-color($key: 'step-1-gradient-bg') {
+	@return map-get($shapes-gogo2-colors, $key)
+}
+@function shapes-gogo3-color($key: 'step-1-gradient-bg') {
+	@return map-get($shapes-gogo3-colors, $key)
+}
+@function shapes-gogo4-color($key: 'step-1-gradient-bg') {
+	@return map-get($shapes-gogo4-colors, $key)
+}
