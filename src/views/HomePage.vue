@@ -37,13 +37,10 @@
                 >
                   <h2 class="display-1 text-black text-center">GoGo Board</h2>
                   <h2 class="display-2 text-muted text-center">
-                    <span>เปลี่ยนความคิดให้เป็นการลงมือทำ.</span>
+                    <span>{{$t('introTitle')}}.</span>
                   </h2>
                   <p class="lead text-muted">
-                    GoGo Board เป็นอุปกรณ์ราคาประหยัดเพื่อการศึกษา เข่น การสร้างหุ่นยนต์ การทำโครงงานวิทยาศาสตร์
-                    และ Iots เด็กสามารถใช้ GoGo Board ในการสร้างหุ่นยนต์ หรือแม้กระทั่งการวัดค่าสภาพแวดล้ามต่างๆ
-                    ผ่านเซ็นเซอร์ รวมไปถึงการสร้างอุปกรณ์ควบคุมเพื่อใช้ในการเล่นเกม และยังมีอีกหลายอย่างที่สามารถ
-                    สร้างได้ด้วย GoGo Board
+                    {{$t('intro')}}
                   </p>
                 </card>
               </div>
@@ -68,7 +65,7 @@
             <div class="text-center">
               <h2 class="display-1 text-warning">GoGo Code</h2>
               <p class="display-4 text-light">
-                และนี่คือเครื่องมือที่ใช้เพื่อควบคุม GoGo Board
+                {{$t('gogoCode')}}
               </p>
             </div>
             <div class="gogo-code-container">
@@ -101,12 +98,12 @@
           <div class="col px-0">
             <div class="row">
               <div class="col-lg-6">
-                <h2 class="display-1 text-white">ลองดูสิ</h2>
+                <h2 class="display-1 text-white">{{$t('exampleTitle')}}</h2>
                 <p class="lead text-white">
-                  และนี่คือตัวอย่างในการทำให้ GoGo Board เล่นเสียง
+                  {{$t('exampleSub')}}
                 </p>
                 <div class="btn-wrapper">
-                  <base-button
+                  <!-- <base-button
                     tag="a"
                     href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
                     class="mb-3 mb-sm-0"
@@ -115,7 +112,7 @@
                     target="_blank"
                   >
                     Buy
-                  </base-button>
+                  </base-button> -->
                   <base-button
                     tag="a"
                     href="https://code.gogoboard.org/#/program/"
@@ -124,7 +121,7 @@
                     icon="fa fa-code"
                     target="_blank"
                   >
-                    code.gogo Website
+                    GoGo Code
                   </base-button>
                 </div>
               </div>
@@ -144,7 +141,7 @@
     <section class="section section-lg pt-lg-0">
       <div class="container">
         <div class="row justify-content-center">
-          <h2 class="display-1">แพลทฟอร์มที่รองรับ</h2>
+          <h2 class="display-1">{{$t('supportTitle')}}</h2>
           <div class="col-lg-13 top-text-padding">
             <div class="row row-grid">
               <div class="col-lg-4">
@@ -158,12 +155,11 @@
                     <div class="row top-buffer">
                       <h6 class="text-primary text-uppercase">Arduino</h6>
                       <p class="description mt-3">
-                        Arduino คือ open-sourcse ที่เป็นที่ผลิตตัว microcontroller และเป็นที่ยอมรับสำหรับทั่วโลกในการทำ
-                         hardware และ software และเป
+                        {{$t('arduinoSub')}}
                       </p>
                       <div>
-                        <badge type="primary" rounded>hardware</badge>
-                        <badge type="primary" rounded>software</badge>
+                        <badge type="primary" rounded>{{$t('hardware')}}</badge>
+                        <badge type="primary" rounded>{{$t('software')}}</badge>
                       </div>
                     </div>
                     <base-button
@@ -173,7 +169,7 @@
                       class="mt-4"
                       target="_blank"
                     >
-                      Learn more
+                      {{$t('learnMore')}}
                     </base-button>
                   </div>
                 </card>
@@ -189,11 +185,10 @@
                     <div class="row top-buffer">
                       <h6 class="text-success text-uppercase">Grove Sensor</h6>
                       <p class="description mt-3">
-                        Grove คือ sensor ที่อำนวยความสะดวกสำหรับการเชื่อมต่อกับตัว
-                        microprocessor ไม่ว่าเป็น input หรือ output เพื่อให้เกิดความสะดวกในการเชื่อมต่อของอุปกรณ์
+                        {{$t('groveSub')}}
                       </p>
                       <div>
-                        <badge type="success" rounded>hardware</badge>
+                        <badge type="success" rounded>{{$t('hardware')}}</badge>
                       </div>
                     </div>
                     <base-button
@@ -203,7 +198,7 @@
                       class="mt-4"
                       target="_blank"
                     >
-                      Learn more
+                      {{$t('learnMore')}}
                     </base-button>
                   </div>
                 </card>
@@ -222,11 +217,10 @@
                     <div class="row top-buffer">
                       <h6 class="text-warning text-uppercase">Scratch</h6>
                       <p class="description mt-3">
-                        Scratch เป็น platform ที่ฟรี และออนไลน์สำหรับการพัฒนาการคิดริเริ่มสร้างสรรค์
-                        สำหรับการเขียน code รวมไปถึงการเขียนโค้ดสำหรับ hardware
+                        {{$t('scratchSub')}}
                       </p>
                       <div>
-                        <badge type="warning" rounded>software</badge>
+                        <badge type="warning" rounded>{{$t('software')}}</badge>
                       </div>
                     </div>
                     <base-button
@@ -236,7 +230,7 @@
                       class="mt-4"
                       target="_blank"
                     >
-                      Learn more
+                      {{$t('learnMore')}}
                     </base-button>
                   </div>
                 </card>
@@ -252,21 +246,21 @@
         <div class="row row-grid justify-content-center">
           <div class="col-lg-8 text-center">
             <h2 class="display-3">
-              สนใจในตัว
+              {{$t('outroTitle.outro1')}}
               <span class="text-primary">GoGo Board?</span>
-              <span class="text-success"
-                >อยากเห็นว่า GoGo Board ทำอะไรได้อีก?
+              <span class="text-success">
+                {{$t('outroTitle.outro2')}}
               </span>
             </h2>
             <p class="lead">
-              คุณสามารถเข้าไปดูรายละเอียดของ GoGo Board ได้ในลิ้งข้างล่างนี้
+              {{$t('outroTitle.outro3')}}
             </p>
             <div class="btn-wrapper">
               <a
                 href="https://www.creative-tim.com/product/vue-argon-design-system"
                 target="_blank"
                 class="btn btn-primary mb-3 mb-sm-0"
-                >Buy Me</a
+                >{{$t('buyNow')}}</a
               >
             </div>
           </div>

@@ -21,8 +21,8 @@
         <div class="container">
             <div class="row row-grid align-items-center my-md">
                 <div class="col-lg-6">
-                    <h3 class="text-primary font-weight-light mb-2">ขอบคุณสำหรับเข้าชมเว็บไซต์ของเรา</h3>
-                    <h4 class="mb-0 font-weight-light">คุณสามารถติดต่อกับเราได้ช่องทางตามนี้</h4>
+                    <h3 class="text-primary font-weight-light mb-2">{{$t('footer.footer1')}}</h3>
+                    <h4 class="mb-0 font-weight-light">{{$t('footer.footer2')}}</h4>
                 </div>
                 <div class="col-lg-6 text-lg-center btn-wrapper">
                     <a target="_blank" rel="noopener" href="https://twitter.com/creativetim"
@@ -61,16 +61,16 @@
                             <a href="https://www.creative-tim.com" class="nav-link" target="_blank" rel="noopener">Logixed</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#/about" class="nav-link" target="_blank" rel="noopener">About
-                                Us</a>
+                            <a href="#/about" class="nav-link" target="_blank" rel="noopener">
+                            {{$t('navAbout')}}</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="http://blog.creative-tim.com" class="nav-link" target="_blank" rel="noopener">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
                                class="nav-link" target="_blank" rel="noopener">MIT License</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>

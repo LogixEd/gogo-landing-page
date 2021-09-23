@@ -38,3 +38,6 @@
 
 ## [0.1.2] 25-08-2021
 - Adding thai language
+
+## [0.1.2] 23-09-2021
+- Adding i18n plugin

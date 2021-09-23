@@ -18,13 +18,13 @@
 
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <a slot="title" href="#/homepage" class="nav-link" role="button">
-                    <span class="nav-link-inner--text">Home</span>
+                    <span class="nav-link-inner--text">{{$t('navHome')}}</span>
                 </a>
                 <a slot="title" href="#/about" class="nav-link" role="button">
-                    <span class="nav-link-inner--text">About</span>
+                    <span class="nav-link-inner--text">{{$t('navAbout')}}</span>
                 </a>
                 <a slot="title" href="#/homepage" class="nav-link" role="button">
-                    <span class="nav-link-inner--text">Documentation</span>
+                    <span class="nav-link-inner--text">{{$t('navDoc')}}</span>
                 </a>
                 
             </ul>
@@ -64,7 +64,7 @@
                 <span class="btn-inner--icon">
                   <i class="fa fa-shopping-bag mr-2"></i>
                 </span>
-                        <span class="nav-link-inner--text">BUY NOW</span>
+                        <span class="nav-link-inner--text">{{$t('buyNow')}}</span>
                     </a>
                 </li>
             </ul>
