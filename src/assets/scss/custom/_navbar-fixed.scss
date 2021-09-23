@@ -1,3 +1,22 @@
+.navbar-fixed {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap; // allow us to do the line break for collapsing content
+    align-items: center;
+    justify-content: space-between; // space out brand from logo
+    padding: $navbar-padding-y $navbar-padding-x;
+  
+    // Because flex properties aren't inherited, we need to redeclare these first
+    // few properties so that content nested within behave properly.
+    > .container,
+    > .container-fluid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
 .navbar-nav {
     .nav-link {
         font-size: $navbar-nav-link-font-size;
@@ -48,7 +67,7 @@
 }
 
 @include media-breakpoint-up(lg) {
-    .navbar-main {
+    .navbar-main-fixed {
         padding: 1rem 0;
     }
 
@@ -158,12 +177,12 @@
 }
 
 // Transparent navbar
-.navbar-transparent {
-    position: absolute;
+.navbar-transparent-fixed {
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 1);
     border: 0;
     box-shadow: none;
 
@@ -175,9 +194,8 @@
         color: rgba(255, 255, 255, 1);
     }
 
-
     .navbar-toggler-icon {
-        background-image: $navbar-dark-toggler-icon-bg;
+        background-image: $navbar-gogo-toggler-icon-bg;
     }
 }
 

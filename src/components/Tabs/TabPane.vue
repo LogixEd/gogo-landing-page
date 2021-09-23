@@ -1,5 +1,5 @@
 <template>
-  <div class="tab-pane fade"
+  <div class=" mb-3 tab-pane fade"
        :id="id || label"
        :class="{'active show': active}"
        v-show="active"

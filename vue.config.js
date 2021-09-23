@@ -6,6 +6,9 @@ module.exports = {
             ? '/gogo-landing-page/'
             : '/'
     ,
+    // chainWebpack: config => {
+    //     config.module.rules.delete('eslint');
+    // },
     configureWebpack: {
         // Set up all the aliases we use in our app.
         plugins: [
@@ -24,5 +27,5 @@ module.exports = {
     css: {
         // Enable CSS source maps.
         sourceMap: process.env.NODE_ENV !== 'production'
-    }
+    },
 };
