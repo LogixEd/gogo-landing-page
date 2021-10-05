@@ -63,8 +63,8 @@
         <div class="container">
           <div class="row row-grid justify-content-center my-0">
             <div class="text-center">
-              <h2 class="display-1 text-warning">GoGo Code</h2>
-              <p class="display-4 text-light">
+              <h2 class="display-1 text-success">GoGo Code</h2>
+              <p class="display-4 text-info">
                 {{$t('gogoCode')}}
               </p>
             </div>
@@ -244,7 +244,7 @@
     <section class="section section-lg">
       <div class="container">
         <div class="row row-grid justify-content-center">
-          <div class="col-lg-8 text-center">
+          <div class="col-lg-12 text-center">
             <h2 class="display-3">
               {{$t('outroTitle.outro1')}}
               <span class="text-primary">GoGo Board?</span>
@@ -293,7 +293,7 @@ import web from "../modifiedComponents/ImportWeb.vue";
 import { ModelCollada } from "vue-3d-model";
 import Tabs from "@/components/Tabs/Tabs.vue";
 import TabPane from "@/components/Tabs/TabPane.vue";
-import Carousal from "./components/BST-Carousal.vue";
+import Carousal from "@/components/BST-Carousal.vue";
 
 export default {
   created(){

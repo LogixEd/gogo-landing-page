@@ -58,8 +58,8 @@
                     </a>
                 </li>
                 <li class="nav-item d-none d-lg-block ml-lg-4">
-                    <a href="https://www.creative-tim.com/product/vue-argon-design-system" target="_blank" rel="noopener"
-                       class="btn btn-neutral btn-icon">
+                    <a href="" target="_blank" rel="noopener"
+                       class="btn btn-outline-primary btn-icon">
                 <span class="btn-inner--icon">
                   <i class="fa fa-shopping-bag mr-2"></i>
                 </span>
