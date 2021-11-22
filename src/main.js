@@ -20,11 +20,13 @@ import App from "./App.vue";
 import router from "./router";
 import Argon from "./plugins/argon-kit";
 import i18n from "./plugins/i18n";
+// import Vuetify from 'vuetify'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import './registerServiceWorker'
 
 Vue.use(BootstrapVue)
 Vue.use(Argon);
+// Vue.use(Vuetify)
 
 Vue.config.productionTip = false;
 

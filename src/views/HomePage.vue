@@ -417,7 +417,7 @@ export default {
 }
 
 h2 {
-  font-size: 4.5vw;
+  font-size: 4vw;
 }
 
 @media only screen and (max-width: 1320px) {

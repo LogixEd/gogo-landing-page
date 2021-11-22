@@ -1,7 +1,7 @@
 <template>
     <header class="header-global">
         <base-nav class="navbar-main-fixed" transparent type="" effect="light" expand="true">
-            <router-link slot="brand" class="navbar-brand mr-lg-5" to="/homepage">
+            <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
                 <img src="../img/gogo-logo.png" alt="logo">
             </router-link>
 
@@ -30,28 +30,28 @@
 
            <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" rel="noopener"
+                    <a class="nav-link nav-link-icon" href="https://www.facebook.com/GoGo-Board-Thailand-199024580829714" target="_blank" rel="noopener"
                        data-toggle="tooltip" title="Like us on Facebook">
                         <i class="fa fa-facebook-square"></i>
                         <span class="nav-link-inner--text d-lg-none">Facebook</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial"
+                    <a class="nav-link nav-link-icon" href=""
                        target="_blank" rel="noopener" data-toggle="tooltip" title="Follow us on Instagram">
                         <i class="fa fa-instagram"></i>
                         <span class="nav-link-inner--text d-lg-none">Instagram</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" rel="noopener"
                        data-toggle="tooltip" title="Follow us on Twitter">
                         <i class="fa fa-twitter-square"></i>
                         <span class="nav-link-inner--text d-lg-none">Twitter</span>
                     </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial/vue-argon-design-system"
+                    <a class="nav-link nav-link-icon" href=""
                        target="_blank" rel="noopener" data-toggle="tooltip" title="Star us on Github">
                         <i class="fa fa-github"></i>
                         <span class="nav-link-inner--text d-lg-none">Github</span>
@@ -66,8 +66,15 @@
                         <span class="nav-link-inner--text">{{$t('buyNow')}}</span>
                     </a>
                 </li>
+                <!-- <li class="nav-item d-none d-lg-block ml-lg-4"> -->
+                <!-- </li> -->
             </ul>
-
+            <div>
+                <b-dropdown v-bind:text="flagBtn">
+                    <b-dropdown-item @click="changeLocale('th')">TH</b-dropdown-item>
+                    <b-dropdown-item @click="changeLocale('en')">EN</b-dropdown-item>
+                </b-dropdown>
+            </div>
         </base-nav>
     </header>
 </template>
@@ -75,17 +82,39 @@
 import BaseNav from "@/modifiedComponents/baseNav";
 import BaseDropdown from "@/components/BaseDropdown";
 import CloseButton from "@/components/CloseButton";
+import i18n from '@/plugins/i18n'
 
 export default {
   components: {
     BaseNav,
     CloseButton,
     BaseDropdown
+  },
+  data () {
+    return {
+      menuLanguage: false,
+      flagBtn: 'th',
+      languages: [
+        {  language: 'en', title: 'English'},
+        {  language: 'th', title: 'ไทย'}
+      ]
+    }
+  },
+  methods: {
+    changeLocale(locale) {
+      i18n.locale = locale
+      this.flagBtn = locale
+    }
   }
 };
 </script>
 <style>
 .item-muted{
     color: grey;
+}
+.lang-sw{
+    /* width: 1px;
+    height: 1px; */
+    margin-right: 5vw;
 }
 </style>
