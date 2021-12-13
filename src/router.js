@@ -2,6 +2,9 @@ import Vue from "vue";
 import Router from "vue-router";
 import About from './views/About.vue'
 import HomePage from './views/HomePage.vue'
+import FAQ from './views/FAQ.vue'
+import Contact from './views/Contact.vue'
+import Product from './views/Product.vue'
 import WebHeader from './layout/WebHeader.vue'
 import WebFooter from './layout/WebFooter.vue'
 
@@ -25,6 +28,33 @@ export default new Router({
       components: {
         header: WebHeader,
         default: About,
+        footer: WebFooter
+      }
+    },
+    {
+      path: "/FAQ",
+      name: "FAQ",
+      components: {
+        header: WebHeader,
+        default: FAQ,
+        footer: WebFooter
+      }
+    },
+    {
+      path: "/contact",
+      name: "Contact",
+      components: {
+        header: WebHeader,
+        default: Contact,
+        footer: WebFooter
+      }
+    },
+    {
+      path: "/product",
+      name: "Product",
+      components: {
+        header: WebHeader,
+        default: Product,
         footer: WebFooter
       }
     },

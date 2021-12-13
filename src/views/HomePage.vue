@@ -35,13 +35,19 @@
                   body-classes="py-5"
                   class="appear-when-last"
                 >
-                  <h2 class="display-1 text-black text-center">GoGo Board</h2>
+                  <h1 class="display-1 text-black text-center">GoGo Board</h1>
                   <h2 class="display-2 text-muted text-center">
-                    <span>{{$t('introTitle')}}.</span>
+                    <span>{{$t('introTitle1')}}.</span>
                   </h2>
-                  <p class="lead text-muted">
-                    {{$t('intro')}}
-                  </p>
+                  <div class="col-lg-12 text-center">
+                    <p class="lead text-muted">
+                      {{$t('intro1')}}
+                      <!-- <br> -->
+                      {{$t('intro2')}}
+                      <!-- <br> -->
+                      {{$t('intro3')}}
+                    </p>
+                  </div>
                 </card>
               </div>
             </div>
@@ -241,6 +247,29 @@
       </div>
     </section>
     <br />
+    <section class="section section-lg pt-lg-0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2 class="display-1">พาร์ทเนอร์ของเรา</h2>
+          <img
+            src="../img/Partners.png"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="section section-lg pt-lg-0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <br>
+          <h2 class="display-1">ลูกค้าของเรา</h2>
+          <img
+            src="../img/Customers.png"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </section>
     <section class="section section-lg">
       <div class="container">
         <div class="row row-grid justify-content-center">
@@ -416,8 +445,12 @@ export default {
   }
 }
 
+h1 {
+  font-size: 5vw;
+}
+
 h2 {
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 @media only screen and (max-width: 1320px) {
@@ -463,10 +496,10 @@ h2 {
     font-size: 3vw;
   }
   .card-container h1 {
-    font-size: 3vw;
+    font-size: 5vw;
   }
   .card-container h2 {
-    font-size: 5vw;
+    font-size: 3vw;
   }
   h2 {
     font-size: 10vw;
