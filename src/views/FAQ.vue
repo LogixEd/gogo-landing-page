@@ -6,7 +6,7 @@
                 <div class="card card-body mt-5">
                     <!-- ===================== About Modal ===================== -->
                         <br>
-                        <h1 class="text-center __web-inspector-hide-shortcut__">Frequently Asked Questions</h1>
+                        <h1 class="text-center __web-inspector-hide-shortcut__">{{$t('FAQ.FAQTitle')}}</h1>
                         <br>
                         <h3><strong> Where can i purchase the GoGo Board? </strong></h3>
                         <p>At Lazada or Shopee</p>

@@ -8,6 +8,9 @@ const messages = {
         'navHome': 'หน้าหลัก',
         'navAbout': 'เกี่ยวกับ',
         'navDoc': 'เอกสาร',
+        'navPro': 'สินค้า',
+        'navFAQ': 'คำถาม',
+        'navContact': 'ติดต่อ',
         'buyNow': 'ซื้อเลย',
         'learnMore': 'เรียนรู้เพิ่มเติม',
         'hardware': 'ฮาร์ดแวร์',
@@ -33,19 +36,37 @@ const messages = {
         'footer':{
             'footer1': 'ขอบคุณสำหรับเข้าชมเว็บไซท์ของเรา',
             'footer2': 'คุณสามารถติดต่อกับเราได้ช่องทางตามนี้'
+        },
+        'FAQ':{
+            'FAQTitle': 'คำถามที่พบบ่อย'
+        },
+        'Contact':{
+            'ContactTitle': 'ติดต่อเรา',
+            'EmailTitle': 'ส่งอีเมลล์มาหาเรา',
+            'SendEmailButton': 'ส่งอีเมลล์',
+            'YourEmail': 'อีเมลล์ของคุณ',
+            'Title': 'เรื่อง',
+            'Message': 'ข้อความ...'
         }
 
     },
     'en':{
         'navHome': 'Home',
         'navAbout': 'About',
-        'navDoc': 'Documentation',
+        'navDoc': 'Docs',
+        'navPro': 'Products',
+        'navFAQ': 'FAQ',
+        'navContact': 'Contact',
         'buyNow': 'BUY NOW',
         'learnMore': 'Learn More',
         'hardware': 'Hardware',
         'software': 'Software',
         'introTitle': 'Turn imagination to practice',
+        'introTitle1': 'Science and Robotic Toolkit for Inventive minds',
         'intro': 'The GoGo Board is a low-cost open-source hardware device for educational robotics, scientific experiments, and environmental sensing. Children can use the board to construct robots, measure and log environmental data, conduct scientific investigations, create game controllers, build interactive art installations, and much more.',
+        'intro1': 'The GoGo board is a device for educational robotics, scientific experiments, and environmental sensing.',
+        'intro2': 'Children can use the board to create a things from their imagination also solving a problems.',
+        'intro3': 'Support 21st Century Knowledge Enhancement STEM, Project base learning และ Innovation',
         'gogoCode': 'This is the tool for operating the board.',
         'exampleTitle': 'TRY THIS',
         'exampleSub': 'beep example',
@@ -61,6 +82,17 @@ const messages = {
         'footer':{
             'footer1': 'Thank you for visiting us',
             'footer2': "Let's get in touch on any of these platforms."
+        },
+        'FAQ':{
+            'FAQTitle': 'Frequently Asked Question'
+        },
+        'Contact':{
+            'ContactTitle': 'Contact Us',
+            'EmailTitle': 'Send Us and Email',
+            'SendEmailButton': 'Send Email',
+            'YourEmail': 'Your Email',
+            'Title': 'Title',
+            'Message': 'Type a Message...'
         }
     }
 }
