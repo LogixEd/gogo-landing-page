@@ -17,39 +17,41 @@
           </div>
           <div class="animation-container">
             <div class="container-gogo">
-              <div class="img-container slide-to-left">
-                <transition name="fadeForGoGo">
-                  <img
-                    src="../img/gogopic.png"
-                    class="img-fluid floating img-gogo-logo"
-                    v-on:load="onLoaded"
-                    v-show="loaded"
-                  />
-                </transition>
-              </div>
-              <div class="card-container">
-                <!-- class="border-0 h-100" hover shadow body-classes="py-5" -->
-                <card
-                  gradient="secondary"
-                  shadow
-                  body-classes="py-5"
-                  class="appear-when-last"
-                >
-                  <h1 class="display-1 text-black text-center">GoGo Board</h1>
-                  <h2 class="display-2 text-muted text-center">
-                    <span>{{$t('introTitle1')}}.</span>
-                  </h2>
-                  <div class="col-lg-12 text-center">
-                    <p class="lead text-muted">
-                      {{$t('intro1')}}
-                      <!-- <br> -->
-                      {{$t('intro2')}}
-                      <!-- <br> -->
-                      {{$t('intro3')}}
-                    </p>
-                  </div>
-                </card>
-              </div>
+              <!-- <div class="col-lg-12"> -->
+                <div class="img-container slide-to-left">
+                  <transition name="fadeForGoGo">
+                    <img
+                      src="../img/gogopic.png"
+                      class="img-fluid floating img-gogo-logo"
+                      v-on:load="onLoaded"
+                      v-show="loaded"
+                    />
+                  </transition>
+                </div>
+                <div class="card-container">
+                  <!-- class="border-0 h-100" hover shadow body-classes="py-5" -->
+                  <card
+                    gradient="secondary"
+                    shadow
+                    body-classes="py-5"
+                    class="appear-when-last"
+                  >
+                    <h1 class="display-1 text-black text-center">GoGo Board</h1>
+                    <h2 class="display-2 text-muted text-center">
+                      <span>{{ $t("introTitle1") }}.</span>
+                    </h2>
+                    <div class="col-lg-12 text-center">
+                      <p class="lead text-muted">
+                        {{ $t("intro1") }}
+                        <!-- <br> -->
+                        {{ $t("intro2") }}
+                        <!-- <br> -->
+                        {{ $t("intro3") }}
+                      </p>
+                    </div>
+                  </card>
+                </div>
+              <!-- </div> -->
             </div>
           </div>
         </section>
@@ -71,7 +73,7 @@
             <div class="text-center">
               <h2 class="display-1 text-success">GoGo Code</h2>
               <p class="display-4 text-info">
-                {{$t('gogoCode')}}
+                {{ $t("gogoCode") }}
               </p>
             </div>
             <div class="gogo-code-container">
@@ -104,9 +106,9 @@
           <div class="col px-0">
             <div class="row">
               <div class="col-lg-6">
-                <h2 class="display-1 text-white">{{$t('exampleTitle')}}</h2>
+                <h2 class="display-1 text-white">{{ $t("exampleTitle") }}</h2>
                 <p class="lead text-white">
-                  {{$t('exampleSub')}}
+                  {{ $t("exampleSub") }}
                 </p>
                 <div class="btn-wrapper">
                   <!-- <base-button
@@ -133,7 +135,7 @@
               </div>
               <div class="card-body p-lg-12">
                 <web
-                class="shadow"
+                  class="shadow"
                   :src="'https://code.gogoboard.org/#/view/17799706-2dbe-4614-b7a1-3dc94d0e545f?lang=en'"
                 />
               </div>
@@ -147,7 +149,7 @@
     <section class="section section-lg pt-lg-0">
       <div class="container">
         <div class="row justify-content-center">
-          <h2 class="display-1">{{$t('supportTitle')}}</h2>
+          <h2 class="display-1">{{ $t("supportTitle") }}</h2>
           <div class="col-lg-13 top-text-padding">
             <div class="row row-grid">
               <div class="col-lg-4">
@@ -161,11 +163,15 @@
                     <div class="row top-buffer">
                       <h6 class="text-primary text-uppercase">Arduino</h6>
                       <p class="description mt-3">
-                        {{$t('arduinoSub')}}
+                        {{ $t("arduinoSub") }}
                       </p>
                       <div>
-                        <badge type="primary" rounded>{{$t('hardware')}}</badge>
-                        <badge type="primary" rounded>{{$t('software')}}</badge>
+                        <badge type="primary" rounded>{{
+                          $t("hardware")
+                        }}</badge>
+                        <badge type="primary" rounded>{{
+                          $t("software")
+                        }}</badge>
                       </div>
                     </div>
                     <base-button
@@ -175,7 +181,7 @@
                       class="mt-4"
                       target="_blank"
                     >
-                      {{$t('learnMore')}}
+                      {{ $t("learnMore") }}
                     </base-button>
                   </div>
                 </card>
@@ -191,10 +197,12 @@
                     <div class="row top-buffer">
                       <h6 class="text-success text-uppercase">Grove Sensor</h6>
                       <p class="description mt-3">
-                        {{$t('groveSub')}}
+                        {{ $t("groveSub") }}
                       </p>
                       <div>
-                        <badge type="success" rounded>{{$t('hardware')}}</badge>
+                        <badge type="success" rounded>{{
+                          $t("hardware")
+                        }}</badge>
                       </div>
                     </div>
                     <base-button
@@ -204,7 +212,7 @@
                       class="mt-4"
                       target="_blank"
                     >
-                      {{$t('learnMore')}}
+                      {{ $t("learnMore") }}
                     </base-button>
                   </div>
                 </card>
@@ -223,10 +231,12 @@
                     <div class="row top-buffer">
                       <h6 class="text-warning text-uppercase">Scratch</h6>
                       <p class="description mt-3">
-                        {{$t('scratchSub')}}
+                        {{ $t("scratchSub") }}
                       </p>
                       <div>
-                        <badge type="warning" rounded>{{$t('software')}}</badge>
+                        <badge type="warning" rounded>{{
+                          $t("software")
+                        }}</badge>
                       </div>
                     </div>
                     <base-button
@@ -236,7 +246,7 @@
                       class="mt-4"
                       target="_blank"
                     >
-                      {{$t('learnMore')}}
+                      {{ $t("learnMore") }}
                     </base-button>
                   </div>
                 </card>
@@ -251,22 +261,16 @@
       <div class="container">
         <div class="row justify-content-center">
           <h2 class="display-1">พาร์ทเนอร์ของเรา</h2>
-          <img
-            src="../img/Partners.png"
-            class="img-fluid"
-          />
+          <img src="../img/Partners.png" class="img-fluid" />
         </div>
       </div>
     </section>
     <section class="section section-lg pt-lg-0">
       <div class="container">
         <div class="row justify-content-center">
-          <br>
+          <br />
           <h2 class="display-1">ลูกค้าของเรา</h2>
-          <img
-            src="../img/Customers.png"
-            class="img-fluid"
-          />
+          <img src="../img/Customers.png" class="img-fluid" />
         </div>
       </div>
     </section>
@@ -275,21 +279,21 @@
         <div class="row row-grid justify-content-center">
           <div class="col-lg-12 text-center">
             <h2 class="display-3">
-              {{$t('outroTitle.outro1')}}
+              {{ $t("outroTitle.outro1") }}
               <span class="text-primary">GoGo Board?</span>
               <span class="text-success">
-                {{$t('outroTitle.outro2')}}
+                {{ $t("outroTitle.outro2") }}
               </span>
             </h2>
             <p class="lead">
-              {{$t('outroTitle.outro3')}}
+              {{ $t("outroTitle.outro3") }}
             </p>
             <div class="btn-wrapper">
               <a
-                href="https://www.creative-tim.com/product/vue-argon-design-system"
+                href="https://shopee.co.th/itim.shop?categoryId=100632&itemId=13027667638"
                 target="_blank"
                 class="btn btn-primary mb-3 mb-sm-0"
-                >{{$t('buyNow')}}</a
+                >{{ $t("buyNow") }}</a
               >
             </div>
           </div>
@@ -298,23 +302,13 @@
     </section>
     <section class="section section-lg">
       <div class="container">
-        <Carousal />
+        <div class="row row-grid justify-content-center">
+          <div class="col-lg-12 text-center">
+            <Carousal />
+          </div>
+        </div>
       </div>
     </section>
-    <!-- <section class="section section-lg">
-            <div class="container">
-                <h2 class="display-4 mb-5 mt-5 text-center">FAQ</h2>
-                <div>
-                  <b-card no-body>
-                    <b-tabs card vertical>
-                      <b-tab title="How to power gogoboard."><b-card-text>Tab contents 1</b-card-text></b-tab>
-                      <b-tab title="where is the settings menu"><b-card-text>Tab contents 2</b-card-text></b-tab>
-                      <b-tab title="How to reset the board"><b-card-text>Tab contents 3</b-card-text></b-tab>
-                    </b-tabs>
-                  </b-card>
-                </div>
-            </div>
-        </section> -->
   </div>
 </template>
 <script>
@@ -325,7 +319,7 @@ import TabPane from "@/components/Tabs/TabPane.vue";
 import Carousal from "@/components/BST-Carousal.vue";
 
 export default {
-  created(){
+  created() {
     window.addEventListener("resize", this.myEventHandler);
   },
   destroyed() {
@@ -333,18 +327,18 @@ export default {
   },
   methods: {
     myEventHandler(e) {
-      if(e < 1320){
-        this.less_width = false
-        }else{
-        this.less_width = true
+      if (e < 1320) {
+        this.less_width = false;
+      } else {
+        this.less_width = true;
       }
-    }
+    },
   },
   data() {
     return {
       loaded: false,
       slideIsDone: false,
-      less_width: true
+      less_width: true,
     };
   },
   mounted() {},
@@ -366,7 +360,6 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-
 .gogo-code-container {
   height: 100%;
   width: 100%;
@@ -401,12 +394,12 @@ export default {
 }
 .card-container {
   position: relative;
-  top: 25%;
+  // top: 25%;
   left: 53%;
   width: 70vh;
   height: 50vh;
   transform: translate(-50%, -50%);
-  margin-top: -40%;
+  margin-top: -22%;
   margin-left: 20%;
 }
 .btn-yellow {
@@ -454,7 +447,9 @@ h2 {
 }
 
 @media only screen and (max-width: 1320px) {
-
+  .card-container {
+    top: 30%;
+  }
   .gogo-code-display-height {
     height: 100%;
   }
@@ -502,13 +497,13 @@ h2 {
     font-size: 3vw;
   }
   h2 {
-    font-size: 10vw;
+    font-size: 6vw;
   }
-  h3 {
-    font-size: 5vw;
-  }
+  // h3 {
+  //   font-size: 5vw;
+  // }
   p {
-    font-size: 150%;
+    font-size: 100%;
   }
   @keyframes go-left {
     0% {
@@ -570,7 +565,7 @@ h2 {
   max-height: 150px;
 }
 
-.dummy-fixed-skew{
+.dummy-fixed-skew {
   height: 200px;
   width: 100%;
   clear: both;
