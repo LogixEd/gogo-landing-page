@@ -7,48 +7,79 @@
             <!-- ===================== About Modal ===================== -->
             <br />
             <h1 class="text-center __web-inspector-hide-shortcut__">
-              Contact us
+              {{$t('Contact.ContactTitle')}}
             </h1>
             <br />
             <div>
-              <b-container fluid class="p-4 bg-light">
-                <b-row>
+              <b-container class="p-4" fluid>
+                <b-row >
                   <b-col>
-                    <b-img
-                      thumbnail
-                      fluid
-                      :src="require('@/img/facebook.png')"
-                      alt="Image 1"
-                    ></b-img>
+                    <a
+                      href="https://shopee.co.th/itim.shop?categoryId=100632&itemId=13027667638"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <b-img
+                      class="contact-icon"
+                      center
+                        fluid
+                        rounded="circle"
+                        :src="require('@/img/facebook1.png')"
+                        alt="Image 1"
+                      ></b-img>
+                    </a>
                   </b-col>
                   <b-col>
-                    <b-img
-                      thumbnail
-                      fluid
-                      :src="require('@/img/line.png')"
-                      alt="Image 2"
-                    ></b-img>
+                    <a
+                      href="https://shopee.co.th/itim.shop?categoryId=100632&itemId=13027667638"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <b-img
+                      class="contact-icon"
+                      center
+                        fluid
+                        rounded="circle"
+                        :src="require('@/img/line1.png')"
+                        alt="Image 2"
+                      ></b-img>
+                    </a>
                   </b-col>
                   <b-col>
-                    <b-img
-                      thumbnail
-                      fluid
-                      :src="require('@/img/instagram.png')"
-                      alt="Image 3"
-                    ></b-img>
+                    <a
+                      href="https://shopee.co.th/itim.shop?categoryId=100632&itemId=13027667638"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <b-img
+                      class="contact-icon"
+                      center
+                        fluid
+                        rounded="circle"
+                        :src="require('@/img/instagram1.png')"
+                        alt="Image 3"
+                      ></b-img>
+                    </a>
                   </b-col>
                 </b-row>
               </b-container>
             </div>
             <div class="col-lg-12">
               <card gradient="secondary" shadow body-classes="p-lg-5">
-                <h4 class="mb-1">Send us and email</h4>
+                <h4 class="mb-1">{{$t('Contact.EmailTitle')}}</h4>
                 <p class="mt-0"></p>
                 <base-input
                   class="mt-5"
                   alternative
-                  placeholder="Title"
-                  addon-left-icon="ni ni-user-run"
+                  v-bind:placeholder= "$t('Contact.YourEmail')"
+                  addon-left-icon="ni ni-email-83"
+                >
+                </base-input>
+                <base-input
+                  class="mt-0"
+                  alternative
+                  v-bind:placeholder= "$t('Contact.Title')"
+                  addon-left-icon="ni ni-caps-small"
                 >
                 </base-input>
                 <base-input class="mb-4">
@@ -57,11 +88,11 @@
                     name="name"
                     rows="4"
                     cols="80"
-                    placeholder="Type a message..."
+                    v-bind:placeholder= "$t('Contact.Message')"
                   ></textarea>
                 </base-input>
                 <base-button type="default" round block size="lg">
-                  Send Email
+                  {{$t('Contact.SendEmailButton')}}
                 </base-button>
               </card>
             </div>
@@ -91,5 +122,9 @@ export default {
     rgb(218, 79, 106) 35%,
     rgb(222, 80, 59) 100%
   );
+}
+
+.contact-icon {
+    height: 70%;
 }
 </style>
